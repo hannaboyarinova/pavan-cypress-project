@@ -1,0 +1,12 @@
+Lecture 5
+
+All assertions come from Chai library
+Types of assertions:
+    1. implicit (built-in or неявные in russian)
+        - should()
+        - and()
+    2. explicit (явные in russian, assertions that we need to write explicitly)
+        - expect() - is used in BDD approach
+        - assert() - mainly used in TDD approach
+
+Connected spec: Assertions.cy.js
