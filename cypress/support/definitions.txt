@@ -9,4 +9,13 @@ Types of assertions:
         - expect() - is used in BDD approach
         - assert() - mainly used in TDD approach
 
+Supported attributes for implicit assertions:
+    - eq
+    - contain
+    - include
+    - have.length
+    - have.value
+    - exist
+    - the same attributes with not
+    - etc
 Connected spec: Assertions.cy.js
