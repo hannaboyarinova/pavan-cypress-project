@@ -1,4 +1,4 @@
-Lecture 5
+Lecture 5 Assertions in Cypress
 
 All assertions come from Chai library
 Types of assertions:
@@ -10,3 +10,17 @@ Types of assertions:
         - assert() - mainly used in TDD approach
 
 Connected spec: Assertions.cy.js
+
+Lecture 6 Structure of the project in Cypress
+    - cypress - common folder for the whole project
+    - downloads - downloaded files
+    - e2e - test specs
+    - fixtures - static test data
+    - screenshots - captured screenshots
+    - support - reusable scripts
+        - commands.js - custom commands or overwrittenexisting commands
+        - e2e.js - loads before tests (runs before tests)
+    - videos - captured videos
+    - node_modules - modules for cypress
+    - cypress.config.js - cypress configuration
+    - package.json - dependencies for cypress
