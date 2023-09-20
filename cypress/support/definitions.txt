@@ -33,3 +33,17 @@ Lecture 6 Structure of the project in Cypress
     - node_modules - modules for cypress
     - cypress.config.js - cypress configuration
     - package.json - dependencies for cypress
+
+    Lecture 7
+    - main action for checking checkboxes/radiobuttons is check()
+    - check() and click() are interchangeable to make radiobutton or checkbox checked
+    - check() only marks checkbox as checked regardless its previous state
+    - uncheck() and click() are interchangeable to make checkbox unchecked
+    - uncheck() marks checkbox as unchecked regardless previous state
+    - click() is used to uncheck previously checked single checkbox
+    - li ~ a The sibling combinator. Selects a element following a li element.
+    - https://www.freecodecamp.org/news/css-selectors-cheat-sheet/ - css selectors cheat sheet
+    - it's possible to check state of checkboxes, check or uncheck etc them one by one and all at a time
+        //verify that all checkboxes are unchecked (array of all elements with 'checkbox' type is verified to not be checked)
+		cy.get('[type = "checkbox"]').should('not.be.checked')
+    - link to spec is RadioButtonsAndCheckboxes.cy.js
