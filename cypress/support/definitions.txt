@@ -47,3 +47,13 @@ Lecture 6 Structure of the project in Cypress
         //verify that all checkboxes are unchecked (array of all elements with 'checkbox' type is verified to not be checked)
 		cy.get('[type = "checkbox"]').should('not.be.checked')
     - link to spec is RadioButtonsAndCheckboxes.cy.js
+
+    Lecture 8
+    - for dropdowns with <select> in-built command select() is used
+    - assertion for dropdown with select is should('have.value', 'name') as all options 
+    have 'value' attribute to refer to
+    - for bootstrap dropdown (without <select>) with test input to suggest 
+    option is better way to refer is to check the input and type in
+    - there's special option for type() method that allows to imitate keyboard actions
+       cy.get('.select2-search__field').type('Belarus', '{ enter }')
+    
