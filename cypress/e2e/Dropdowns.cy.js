@@ -7,4 +7,10 @@ describe('Handle dropdowns', () => {
 			.wait(5000)
 			.should('have.value', 'Belarus')
 	})
+
+	it.only('Dropdown without select', () => {
+		cy.visit('https://www.dummyticket.com/dummy-ticket-for-visa-application/')
+		cy.get('#select2-billing_country-container').click()
+		cy.get('.select2-search__field').type('Belarus', '{ enter }')
+	})
 })
