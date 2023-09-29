@@ -56,4 +56,14 @@ Lecture 6 Structure of the project in Cypress
     option is better way to refer is to check the input and type in
     - there's special option for type() method that allows to imitate keyboard actions
        cy.get('.select2-search__field').type('Belarus', '{ enter }')
-    
+
+    Lecture 8
+    - there are different types of dropdowns that require different approaches in automation
+        1. dropdown with <select> tag - cy.get(element).select(option). Method should('have.option', value) is used to assert
+        2. dropdown without <select> tag - usually has search input inside the dropdown. So it's easy to reffer to search input. 
+            Method should('have.text', value) is used to check correct chosen option
+        3. auto suggest dropdown - type of search line where suggestions are static and always the same
+        4. dynamic dropdown is a sort of dropdowns when results may change from time to time 
+            (alternative version of autosuggest dropdowns)
+    - link to spec - Dropdowns.cy.js
+
