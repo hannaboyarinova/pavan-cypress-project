@@ -65,5 +65,20 @@ Lecture 6 Structure of the project in Cypress
         3. auto suggest dropdown - type of search line where suggestions are static and always the same
         4. dynamic dropdown is a sort of dropdowns when results may change from time to time 
             (alternative version of autosuggest dropdowns)
-    - link to spec - Dropdowns.cy.js
+    - link to spec - Dropdowns.cy.jst
+
+    Lecture 9
+        Types of alerts
+        - JS Alert: it will have some text and 'OK' button
+        - JS Confirm Alert: It will have some text with 'OK' and 'Cancel' buttons
+        - JS Prompt Alert: it will have some text with a text box for user input along with 'OK' button
+        - Authenticated Alert
+
+        Alert windows are automatically closed by Cypress. So if you need to check data on Alert it's necessary 
+        to trigger event 
+        - 'window:alert' for simple Alert window
+        - 'window:confirm' for Confirm Alert window
+        - etc 
+    - link to spec - Alerts.cy.js
+        
 
