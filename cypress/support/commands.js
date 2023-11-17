@@ -26,3 +26,9 @@
 Cypress.Commands.add('visitPage', url => {
 	cy.visit(url)
 })
+Cypress.Commands.add('getIFrame', iframe => {
+	cy.get(iframe)
+		.its('0.contentDocument.body')
+		.should('be.visible')
+		.then(cy.wrap)
+})
